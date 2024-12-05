@@ -209,7 +209,7 @@ export type DocumentProps = {
 const defaultOnPassword: OnPassword = (callback, reason) => {
   switch (reason) {
     case PasswordResponses.NEED_PASSWORD: {
-      const password = prompt('Enter the password to open this PDF file.');
+      const password = prompt('Enter the password!!! to open this PDF file.');
       callback(password);
       break;
     }
